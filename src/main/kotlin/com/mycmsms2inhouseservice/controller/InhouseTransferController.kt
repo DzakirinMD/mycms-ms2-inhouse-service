@@ -1,16 +1,16 @@
 package com.mycmsms2inhouseservice.controller
 
-import com.mycmsms2inhouseservice.service.InhouseTransfersService
+import com.mycmsms2inhouseservice.service.InhouseTransferService
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RequestMapping
 import org.springframework.web.bind.annotation.RestController
 
 @RestController
 @RequestMapping("/api/v1")
-class InhouseTransfersController(
-    private val inhouseTransfersService: InhouseTransfersService
+class InhouseTransferController(
+    private val inhouseTransferService: InhouseTransferService
 ) {
 
     @GetMapping("/inhouse-transfers")
-    fun findAll() = inhouseTransfersService.findAll()
+    fun findAll() = inhouseTransferService.findAll()
 }
