@@ -9,7 +9,7 @@ plugins {
 }
 
 group = "com"
-version = "0.0.1-SNAPSHOT"
+version = "0.0.1"
 java.sourceCompatibility = JavaVersion.VERSION_11
 
 configurations {
@@ -29,6 +29,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 	implementation("org.springframework.kafka:spring-kafka")
+	implementation("com.google.code.gson:gson:2.10.1")
 	compileOnly("org.projectlombok:lombok")
 	runtimeOnly("org.postgresql:postgresql")
 	annotationProcessor("org.projectlombok:lombok")
