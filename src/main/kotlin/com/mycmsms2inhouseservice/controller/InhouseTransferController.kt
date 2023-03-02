@@ -11,6 +11,6 @@ class InhouseTransferController(
     private val inhouseTransferService: InhouseTransferService
 ) {
 
-    @GetMapping("/inhouse-transfers")
+    @GetMapping("/inhouse-transfer")
     fun findAll() = inhouseTransferService.findAll()
 }

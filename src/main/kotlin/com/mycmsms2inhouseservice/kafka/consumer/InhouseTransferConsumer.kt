@@ -24,7 +24,6 @@ class InhouseTransferConsumer(
 
         val inhouseTransferEventDTO = objectMapper.readValue(message, InhouseTransferEventDTO::class.java)
 
-
         inhouseTransferService.createInhouseTransfers(inhouseTransferEventDTO)
     }
 }
