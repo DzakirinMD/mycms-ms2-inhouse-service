@@ -1,4 +1,4 @@
-package com.mycmsms2inhouseservice.domain
+package com.mycmsms2inhouseservice.entity
 
 import lombok.Data
 import javax.persistence.*
@@ -10,7 +10,7 @@ class InhouseTransfer(
 
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
-        var id: Long? = null,
+        var id: Long,
         var inhouseTransferTrxId: String,
         var inhouseTransferTrxName: String,
         var inhouseTransferTrxEmailRecipient: String,
