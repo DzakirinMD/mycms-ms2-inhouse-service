@@ -14,3 +14,11 @@ fun convertToDTO(inhouseTransfer: InhouseTransfer): InhouseTransferDTO {
     )
 }
 
+fun InhouseTransfer.toResponse() = InhouseTransferDTO(
+    id = id,
+    inhouseTransferTrxId = inhouseTransferTrxId,
+    inhouseTransferTrxName = inhouseTransferTrxName,
+    inhouseTransferTrxEmailRecipient = inhouseTransferTrxEmailRecipient,
+    inhouseTransferTrxQty = inhouseTransferTrxQty,
+    inhouseTransferTrxAmount = inhouseTransferTrxAmount
+)

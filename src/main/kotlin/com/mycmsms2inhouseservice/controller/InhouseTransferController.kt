@@ -1,6 +1,7 @@
 package com.mycmsms2inhouseservice.controller
 
 import com.mycmsms2inhouseservice.service.InhouseTransferService
+import org.springframework.web.bind.annotation.CrossOrigin
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.PathVariable
 import org.springframework.web.bind.annotation.RequestMapping
@@ -12,6 +13,7 @@ class InhouseTransferController(
     private val inhouseTransferService: InhouseTransferService
 ) {
 
+    @CrossOrigin
     @GetMapping
     fun findAllTrx() = inhouseTransferService.findAllTrx()
 
